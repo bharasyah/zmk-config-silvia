@@ -32,13 +32,14 @@
         steps = <80>;
         status = "disabled";
     };
+        &left_encoder {
+            status = "okay";
+    };
         sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
-    &left_encoder {
-    status = "okay";
-};
+    
 
 };
