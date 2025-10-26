@@ -28,7 +28,8 @@
             bindings = <
                 &kp ESC     &kp Q       &kp W   
                 &kp E       &kp R       &kp T    
-                &kp Y       &kp U       &kp I  
+                &kp Y       &kp U       &kp I 
+                >; 
         };
 
         raise_layer {
