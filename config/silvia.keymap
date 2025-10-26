@@ -10,6 +10,12 @@
 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
 / {
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -25,6 +31,8 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         lower_layer {
             display-name = "Lower Layer";
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
           
             bindings = <
                 &kp ESC     &kp Q       &kp W   
@@ -35,6 +43,9 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         raise_layer {
             display-name = "Raise Layer";
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
             bindings = <
 
                 &kp ESC     &kp Q       &kp W   
@@ -45,6 +56,8 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         adjust_layer {
             display-name = "Adjust Layer";
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         
             bindings = <
 
@@ -56,6 +69,9 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         flock_layer {
             display-name = "Flock Layer";
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
             bindings = <
 
                 &kp ESC     &kp Q       &kp W   
